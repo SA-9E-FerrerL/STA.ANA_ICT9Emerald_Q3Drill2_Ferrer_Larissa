@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>Q3 Drill 2</title>
+
+	<style>
+		body {
+			background-image: url('https://i.pinimg.com/736x/16/bb/dc/16bbdc7c961d460b00d961b673e40f66.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			min-height: 100vh;
+			font-family: 'Segoe UI', sans-serif;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.melody-box {
+			background-color: rgba(255, 255, 255, 0.85); /* mostly white, slightly clear */
+			backdrop-filter: blur(8px); /* subtle frosted effect */
+			border: 2px solid rgba(255, 105, 180, 0.5); /* pink border */
+			border-radius: 20px;
+			padding: 30px;
+			max-width: 500px;
+			box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+			text-align: center;
+		}
+
+		h1 {
+			color: #df64a2;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		summary {
+			color: #ff85c1;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		button {
+			background-color: #ff85c1;
+			border: none;
+			color: white;
+			font-weight: bold;
+			padding: 8px 20px;
+			border-radius: 10px;
+			transition: all 0.2s ease;
+		}
+
+		button:hover {
+			background-color: #ff69b4;
+			box-shadow: 0 0 10px #ffb6d5;
+		}
+
+		input.form-control {
+			margin-bottom: 15px;
+			background-color: rgba(255, 255, 255, 0.9); /* light white for readability */
+			border: 1px solid #ff69b4;
+			color: #333;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="melody-box">
+
+		<h1>Jigglypuff Calculator !! ₍^. .^₎⟆</h1>
+
+		<details>
+			<summary>Instructions ✿</summary>
+			<p id="para1">
+				Hai guys!! ꪆৎ Enter two numbers and click the button to display the <strong>difference</strong> of the two numbers using JavaScript. Let's try it! ୭˚. 
+			</p>
+		</details>
+
+		<form class="form-group">
+			<label>Enter 1st Number ฅᨐฅ: </label>
+			<input type="number" id="num1" class="form-control" placeholder="input any number from 0 to 100" step="any">
+			
+			<label>Enter 2nd Number ≽^-˕ -^≼ :</label>
+			<input type="number" id="num2" class="form-control" placeholder="input any decimal number from 0 to 100" step="any">
+			
+			<button type="button" onclick="displayMe()">Display</button>
+		</form>
+
+	</div>
+
+	<!-- JavaScript -->
+	<script>
+		function displayMe() {
+			let num_1 = document.getElementById("num1").value;
+			let num_2 = document.getElementById("num2").value;
+
+			let diff = num_1 - num_2;
+
+			window.alert("The difference of the two numbers is: " + diff);
+		}
+	</script>
+
+</body>
+</html>
