@@ -1,1 +1,1 @@
-# -STA.ANA_ICT9Emerald_Q3Drill2_Ferrer_Larissa
+# STA.ANA_ICT9Emerald_Q3Drill2_Ferrer_Larissa
